@@ -11,6 +11,16 @@
   {
     coffin: [
       {
+        title: "Siupan",
+        desc: "Ukir Naga",
+        img: "assets/img/portfolio/peti/peti-16.png"
+      }, 
+      {
+        title: "Siupan",
+        desc: "Ukir Burung Hong",
+        img: "assets/img/portfolio/peti/peti-17.png"
+      },
+      {
         title: "Perjamuan",
         desc: "Full Kaca",
         img: "assets/img/portfolio/peti/peti-1.png"
@@ -67,6 +77,46 @@
         title: "Segi 8",
         desc: "Ukir Kembang",
         img: "assets/img/portfolio/peti/peti-12.png"
+      },
+      {
+        title: "8 Dewa",
+        desc: "Full Kaca",
+        img: "assets/img/portfolio/peti/peti-18.png"
+      },
+      {
+        title: "Perjamuan",
+        desc: "Coklat",
+        img: "assets/img/portfolio/peti/peti-19.png"
+      },
+      {
+        title: "Segi Delapan",
+        desc: "Ukir 8 Dewa",
+        img: "assets/img/portfolio/peti/peti-20.png"
+      },
+      {
+        title: "Segi Delapan",
+        desc: "Ukir 8 Dewa",
+        img: "assets/img/portfolio/peti/peti-21.png"
+      },
+      {
+        title: "Peti Bayi",
+        desc: "",
+        img: "assets/img/portfolio/peti/peti-22.png"
+      },
+      {
+        title: "Showroom Peti 1",
+        desc: "",
+        img: "assets/img/portfolio/peti/peti-13.png"
+      },
+      {
+        title: "Showroom Peti 2",
+        desc: "",
+        img: "assets/img/portfolio/peti/peti-14.png"
+      },
+      {
+        title: "Showroom Peti 3",
+        desc: "",
+        img: "assets/img/portfolio/peti/peti-15.png"
       }
     ],
     car: [
@@ -126,23 +176,89 @@
         title: "",
         desc: "",
         img: "assets/img/portfolio/grave/grave-4.png"
+      },{
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/grave/grave-5.png"
+      },
+      {
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/grave/grave-6.png"
+      },
+      {
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/grave/grave-7.png"
+      },
+      {
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/grave/grave-8.png"
+      },{
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/grave/grave-9.png"
+      },
+      {
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/grave/grave-10.png"
+      },
+      {
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/grave/grave-11.png"
+      },
+      {
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/grave/grave-12.png"
+      },{
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/grave/grave-13.png"
+      },
+      {
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/grave/grave-14.png"
+      },
+      {
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/grave/grave-15.png"
       }
     ],
     funeral: [
       {
-        title: "Nama Produk 1",
-        desc: "Penjelasan Produk 1",
-        img: "assets/img/portfolio/portfolio-4.jpg"
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/rumahduka/funeral-1.png"
       },
       {
-        title: "Nama Produk 2",
-        desc: "Penjelasan Produk 2",
-        img: "assets/img/portfolio/portfolio-5.jpg"
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/rumahduka/funeral-2.png"
       },
       {
-        title: "Nama Produk 3",
-        desc: "Penjelasan Produk 3",
-        img: "assets/img/portfolio/portfolio-6.jpg"
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/rumahduka/funeral-3.png"
+      },{
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/rumahduka/funeral-4.png"
+      },
+      {
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/rumahduka/funeral-5.png"
+      },
+      {
+        title: "",
+        desc: "",
+        img: "assets/img/portfolio/rumahduka/funeral-6.png"
       }
     ]
   };
@@ -258,7 +374,7 @@
       html = "";
     }
   });
-
+  
   /**
    * Easy selector helper function
    */
@@ -270,6 +386,16 @@
       return document.querySelector(el)
     }
   }
+
+  /**
+   * Preloader
+   */
+   let preloader = select('#preloader');
+   if (preloader) {
+     window.addEventListener('load', () => {
+       preloader.remove()
+     });
+   }
 
   /**
    * Easy event listener function
